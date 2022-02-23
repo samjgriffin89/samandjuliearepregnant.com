@@ -1,0 +1,21 @@
+title: Sam & Julie are Pregnant!
+base_url: https://www.samandjuliearepregnant.com
+email: samjgriffin89@gmail.com
+
+meta_title: Sam & Julie are Pregnant!
+description: Sam & Julie Griffin are expecting some time in August 2022. We're incredibly excited and are so happy to share the news!
+
+google_analytics_id: UA-24433484-1
+google_site_verification: cT3CHL7PrHfUex3GIuLkyjnk-deuZyedUYGqJGOKGEc
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - .gitignore
+  - README.md
