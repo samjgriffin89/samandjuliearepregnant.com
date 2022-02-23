@@ -1,0 +1,72 @@
+---
+layout: default
+overview: true
+title: Pics
+---
+
+<div class="col s12 center-align">
+	<h1>Pictures Along the Way</h1>	
+</div>
+
+<div id="gallery" class="baby-pics" class="col s12">
+	<img class="baby-pic" src="/images/peanut.jpeg" alt="First ultrasound" />
+	<img class="baby-pic" src="/images/12-weeks.jpeg" alt="12 week ultrasound" />
+	<img class="baby-pic" src="/images/napping-ladies.jpeg" alt="Napping ladies" />
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+    	$("#gallery").nanogallery2({
+      		items: [
+	    		{
+		          src:          '/images/peanut.jpeg', 
+		          srct:         '/images/peanut.jpeg',
+		        },
+		        {
+		          src:          '/images/12-weeks.jpeg', 
+		          srct:         '/images/12-weeks.jpeg',
+		        },
+		        {
+		          src:          '/images/napping-ladies.jpeg', 
+		          srct:         '/images/napping-ladies.jpeg',
+		        }
+		    ],
+		  
+		  	// GALLERY AND THUMBNAIL LAYOUT
+	        thumbnailHeight: '250', thumbnailWidth: 'auto',
+	        galleryDisplayMode: 'none',                 // gallery pagination mode
+	        galleryMaxRows: 3,                                // gallery with max 3 rows
+	        //gallerySorting: 'random',
+	        thumbnailAlignment: 'fillWidth',
+	        thumbnailL1GutterWidth: 20,
+	        thumbnailL1GutterHeight: 20,
+	        thumbnailBorderHorizontal: 1,
+	        thumbnailBorderVertical: 1,
+
+	        // THUMBNAIL TOOLS & LABEL
+	        thumbnailL1Label: { display: true, position:'overImageOnTop', hideIcons: true, titleFontSize: '1.5em', align: 'left'},
+	        thumbnailToolbarImage :  { topLeft: 'select', bottomRight : 'featured,display,download,info,cart' },
+
+	        // DISPLAY ANIMATION
+	        thumbnailDisplayTransition: 'flipUp',       // thumbnail display animation
+	        thumbnailDisplayTransitionDuration: 400,
+	        thumbnailDisplayInterval: 200,
+	        thumbnailDisplayOrder: 'rowByRow',
+
+	        // THUMBNAIL'S HOVER ANIMATION
+	        thumbnailHoverEffect2: 'toolsSlideUp|labelSlideDown',
+	        touchAnimation: true,
+	        touchAutoOpenDelay: -1,
+
+	        // GALLERY THEME
+	        galleryTheme : { 
+	          thumbnail: { titleShadow : 'none', descriptionShadow : 'none', titleColor: '#fff', borderColor: '#fff' },
+	          navigationPagination :  { background: '#3C4B5B', color: '#fff', colorHover: '#aaa', borderRadius: '4px' },
+	        },
+	          
+	        // DEEP LINKING
+	        locationHash: true
+		});
+	});
+</script>

@@ -1,15 +1,24 @@
 .homepage {
-	h1 {
-		color: $royalBlue;
-		font-family: staatliches;
-		font-size: 5rem;
-		margin: 0;
+	
+	.homepage-blurb {
+		margin-top: 25px;
+		font-size: 1.25rem;
 	}
 
-	h2 {
-		color: $skyBlue;
-		font-size: 2.5rem;
-		font-family: lobster;
-		margin: 0;
+	.site-buttons {
+	    margin-top: 35px;
+
+	    a {
+	    	margin: 15px;
+
+	    	&.btn-large {
+	    		background-color: $skyBlue;
+	    		width: 250px;
+	    	}
+
+	    	&.baby-shower {
+	    		display: none;
+	    	}
+	    }
 	}
 }

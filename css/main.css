@@ -2878,6 +2878,18 @@ img {
 @media (min-width: 768px) {
   body {
     padding-bottom: 50px; } }
+h1 {
+  color: #273f87;
+  font-family: staatliches;
+  font-size: 5rem;
+  margin: 0; }
+
+h2 {
+  color: #89CFF0;
+  font-size: 2.5rem;
+  font-family: lobster;
+  margin: 0; }
+
 a {
   color: #dea450; }
   a:hover {
@@ -2886,30 +2898,36 @@ a {
 input {
   color: #9e9e9e; }
 
+.home-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #89CFF0; }
+
 .main-content {
   padding: 2rem;
+  margin-top: 4rem;
   color: #fff;
-  background: rgba(0, 0, 0, 0.7); }
-  .main-content .page-title {
-    width: 85%;
-    margin: 0 auto;
-    font-size: 3em;
-    font-family: staatliches; }
+  /* background: rgba(0, 0, 0, .7);*/ }
   .main-content p {
     line-height: 1.5; }
 
-.site-buttons {
-  padding-top: 50px !important; }
+.baby-pics {
+  margin-top: 3rem;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.7); }
 
-.homepage h1 {
-  color: #273f87;
-  font-family: staatliches;
-  font-size: 5rem;
-  margin: 0; }
-.homepage h2 {
-  color: #89CFF0;
-  font-size: 2.5rem;
-  font-family: lobster;
-  margin: 0; }
+.homepage .homepage-blurb {
+  margin-top: 25px;
+  font-size: 1.25rem; }
+.homepage .site-buttons {
+  margin-top: 35px; }
+  .homepage .site-buttons a {
+    margin: 15px; }
+    .homepage .site-buttons a.btn-large {
+      background-color: #89CFF0;
+      width: 250px; }
+    .homepage .site-buttons a.baby-shower {
+      display: none; }
 
 /*# sourceMappingURL=main.css.map */

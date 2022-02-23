@@ -10,12 +10,29 @@ title: Sam & Julie are Pregnant!
 		<h2>Expecting August 2022</h2>
 	</div>
 
+	<div class="homepage-blurb col s12 center-align">
+		<p>
+			We are so happy to share the news that we are expecting our first child in August of 2022! <br> We appreciate all the support and love we have received and look forward to the future.
+		</p>
+	</div>
+
 	<div class="site-buttons col s12 center-align">
-		<a href="https://www.babylist.com/kuuwjcixm" class="waves-effect waves-light btn-large"><i class="material-icons right">child_care</i>Registery</a>
+		<a href="https://www.babylist.com/kuuwjcixm" class="waves-effect waves-light btn-large" target="_blank"><i class="material-icons right">child_care</i>Registery</a>
+		<a href="/pics" class="waves-effect waves-light btn-large"><i class="material-icons right">photo</i>Pictures</a>
+		<a id="babyshower" href="/baby-shower" class="waves-effect waves-light btn-large baby-shower"><i class="material-icons right">child_care</i>Baby Shower</a>
 	</div>
 
 </div>
 
 <script type="text/javascript">
-	$('.main-content').css('background', 'none');
+	//$('.main-content').css('background', 'none');
+	$('#homebtn').hide();
+
+
+	var urlParams = new URLSearchParams(window.location.search);
+	if (urlParams.has('babyshowerallowed') && urlParams.get('babyshowerallowed') == 'true')
+	{
+		$('#babyshower').css('display', 'inline-block');		
+	}
+
 </script>
