@@ -2866,11 +2866,11 @@ table {
 html {
   height: 100%;
   width: 100%;
-  /*background: url(/images/background.jpg) no-repeat center center fixed; 
+  background: url(/images/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/ }
+  background-size: cover; }
 
 img {
   width: 100%; }
@@ -2898,13 +2898,16 @@ input {
   .main-content p {
     line-height: 1.5; }
 
+.site-buttons {
+  padding-top: 50px !important; }
+
 .homepage h1 {
   color: #273f87;
   font-family: staatliches;
   font-size: 5rem;
   margin: 0; }
 .homepage h2 {
-  color: #dea450;
+  color: #89CFF0;
   font-size: 2.5rem;
   font-family: lobster;
   margin: 0; }
