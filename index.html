@@ -8,6 +8,7 @@ title: Sam & Julie are Pregnant!
 	<div class="header col s12 center-align">
 		<h1>Sam & Julie are Pregnant!</h1>
 		<h2>Expecting August 2022</h2>
+		<strong id="countdown"></strong>
 	</div>
 
 	<div class="homepage-blurb col s12 center-align">
@@ -24,6 +25,7 @@ title: Sam & Julie are Pregnant!
 
 </div>
 
+<script src="/js/countdown.min.js"></script>
 <script type="text/javascript">
 	//$('.main-content').css('background', 'none');
 	$('#homebtn').hide();
@@ -35,4 +37,13 @@ title: Sam & Julie are Pregnant!
 		$('#babyshower').css('display', 'inline-block');		
 	}
 
+	var timerId =
+	  countdown(
+	    new Date(2022, 8, 24),
+	    function(ts) {
+	      document.getElementById('countdown').innerHTML = ts.toHTML("strong");
+	    },
+	    countdown.MONTHS|countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
+
+	document.getElementById('countdown').innerHTML = countdown( new Date(2022, 8, 24) ).toString();
 </script>
