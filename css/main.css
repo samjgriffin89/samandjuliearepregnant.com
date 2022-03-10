@@ -2706,11 +2706,7 @@ table {
 html {
   height: 100%;
   width: 100%;
-  background: url(/images/beach.jpeg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background: #89CFF0; }
 
 img {
   width: 100%; }
@@ -2719,13 +2715,13 @@ img {
   body {
     padding-bottom: 50px; } }
 h1 {
-  color: #89CFF0;
+  color: #273f87;
   font-family: staatliches;
   font-size: 5rem;
   margin: 0; }
 
 h2 {
-  color: #89CFF0;
+  color: #273f87;
   font-size: 2.5rem;
   font-family: lobster;
   margin: 0; }
@@ -2742,35 +2738,32 @@ input {
   position: absolute;
   top: 2rem;
   left: 2rem;
-  color: #89CFF0; }
+  color: #273f87; }
 
 .main-content {
   padding: 2rem;
   margin-top: 4rem;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7); }
+  /* background: rgba(0, 0, 0, .7);*/ }
 .main-content p {
   line-height: 1.5; }
 
 .baby-pics {
   margin-top: 3rem;
-  padding: 3rem; }
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.7); }
 
-.homepage {
-  margin-top: 10rem; }
-.homepage .homepage-wrapper {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 1.5rem .5rem;
-  overflow: hidden; }
 .homepage .homepage-blurb {
   margin-top: 25px;
   font-size: 1.25rem; }
+.homepage .beach img {
+  width: 70%; }
 .homepage .site-buttons {
   margin-top: 35px; }
 .homepage .site-buttons a {
   margin: 15px; }
 .homepage .site-buttons a.btn-large {
-  background-color: #89CFF0;
+  background-color: #273f87;
   width: 250px; }
 .homepage .site-buttons a.baby-shower {
   display: none; }
