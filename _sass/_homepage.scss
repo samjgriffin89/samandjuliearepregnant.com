@@ -1,5 +1,12 @@
 .homepage {
-	
+	margin-top: 10rem;
+
+	.homepage-wrapper {
+		background-color: rgba(0, 0, 0, 0.7);
+		padding: 1.5rem .5rem;
+		overflow: hidden;
+	}
+
 	.homepage-blurb {
 		margin-top: 25px;
 		font-size: 1.25rem;
